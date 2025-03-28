@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forgot Password - MTMS University</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="header">
+        <div class="logo-container">
+            <h1>Forgot Password</h1>
+        </div>
+    </div>
+
+    <div class="forgot-container">
+        <h2>Reset Password</h2>
+        <p>Enter your email to receive an OTP:</p>
+        <input type="email" id="adminEmail" placeholder="admin@mtms.ac.uk">
+        <button id="sendOtpButton">Send OTP</button>
+
+        <div id="otpArea" style="display: none;">
+            <p>Enter the OTP sent to your email:</p>
+            <input type="text" id="otpInput" placeholder="Enter OTP">
+            <button id="verifyOtpButton">Verify OTP</button>
+        </div>
+
+        <p id="resultMessage"></p>
+        <a href="login.html" class="back-link">← Back to Login</a> <!-- Redirects back to Login page -->
+    </div>
+
+    <script src="forgot.js"></script> <!-- Separate JavaScript file -->
+</body>
+</html>
